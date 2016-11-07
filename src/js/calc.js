@@ -16,12 +16,14 @@
         if (!numbers) {
             return total;
         }
-
+        else if(typeof(numbers) === 'string'){
+          return numbers;
+        }
         numbers.forEach(function addThem(num) {
             total += num;
         });
         return total;
-    }
+    };
 
     /**
      * Returns the factorial for the given number which is defined as:
@@ -39,7 +41,7 @@
             return 0;
         }
 
-        for (i=1; i<=topNumber; i++) {
+        for (i = 1; i <= topNumber; i++) {
             total *= i;
         }
         return total;
