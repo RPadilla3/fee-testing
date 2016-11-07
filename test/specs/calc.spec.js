@@ -29,10 +29,16 @@
 
 
         describe('Factorial Function Test', function() {
-                it('Should multiply numbers together up to a chosen factorial', function(){
+            it('Should multiply all numbers up to a chosen factorial', function() {
                 var testResult = window.calc.factorial(5);
                 expect(testResult).to.equal(120);
             });
+            it('Should return false if a string is put into the argument.', function(){
+              var testResult = window.calc.sum('number');
+              expect(testResult).to.be.(false);
+            })
+            it('Should ')
+
         });
 
         xdescribe('Basic test', function() {
