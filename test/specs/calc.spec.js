@@ -3,6 +3,7 @@
 
         window.calc = window.calc || {};
 
+
         // TODO: Your tests go here!
         var expect = chai.expect;
 
@@ -21,17 +22,18 @@
             it('Should determine if the argument is a string the result is untrue.', function() {
                 var result = window.calc.sum('Rodolfo');
                 expect(result).to.equal(false);
-            })
+            });
+
 
         });
 
 
-        // describe('Factorial Function Test', function() {
-        //         it('Should multiply numbers together up to a chosen factorial', function({
-        //           var factorial = window.calc.factorial(5);
-        //           expect(factorial).to.be.a('function');
-        //     })
-        // });
+        describe('Factorial Function Test', function() {
+                it('Should multiply numbers together up to a chosen factorial', function(){
+                var testResult = window.calc.factorial(5);
+                expect(testResult).to.equal(120);
+            });
+        });
 
         xdescribe('Basic test', function() {
 
