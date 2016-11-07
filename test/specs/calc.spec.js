@@ -18,9 +18,9 @@
                 expect(result).to.equal(0);
             });
 
-            it('Should determine if the argument is a string the result is a string.', function() {
+            it('Should determine if the argument is a string the result is untrue.', function() {
                 var result = window.calc.sum('Rodolfo');
-                expect(result).to.equal('Rodolfo');
+                expect(result).to.equal(false);
             })
 
         });
