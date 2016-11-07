@@ -2,6 +2,7 @@
     'use strict';
 
     window.calc = window.calc || {};
+    window.calc.factorial = factorial;
 
     window.calc.sum = sum;
 
@@ -17,7 +18,7 @@
             return total;
         }
         else if(typeof(numbers) === 'string'){
-          return numbers;
+          return false;
         }
         numbers.forEach(function addThem(num) {
             total += num;
@@ -35,7 +36,7 @@
      */
     function factorial(topNumber) {
         var i;
-        var total = 0;
+        var total = 1;
 
         if (typeof(topNumber) !== 'number') {
             return 0;
@@ -43,8 +44,10 @@
 
         for (i = 1; i <= topNumber; i++) {
             total *= i;
+
         }
         return total;
-    }
+        }
+
 
 })();
