@@ -35,13 +35,16 @@
             });
             it('Should return false if a string is put into the argument.', function(){
               var testResult = window.calc.sum('number');
-              expect(testResult).to.be.(false);
+              expect(testResult).to.be.false;
             })
-            it('Should ')
+            it('Should not be undefined if a number is placed into the argument', function(){
+              var testResult = window.calc.sum(5)
+              expect(testResult).to.not.be.undefined;
+            })
 
         });
 
-        xdescribe('Basic test', function() {
+        describe('Basic test', function() {
 
                 it('Should know that 1 is equal to 1.', function() {
                     expect(1).to.equal(1);
