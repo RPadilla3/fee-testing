@@ -16,9 +16,8 @@
 
         if (!numbers) {
             return total;
-        }
-        else if(typeof(numbers) === 'string'){
-          return false;
+        } else if (typeof(numbers) === 'string') {
+            return false;
         }
         numbers.forEach(function addThem(num) {
             total += num;
@@ -39,7 +38,7 @@
         var total = 1;
 
         if (typeof(topNumber) !== 'number') {
-            return 0;
+            return false;
         }
 
         for (i = 1; i <= topNumber; i++) {
@@ -47,7 +46,7 @@
 
         }
         return total;
-        }
+    };
 
 
 })();
