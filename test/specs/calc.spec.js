@@ -1,9 +1,6 @@
 (function() {
     'use strict';
 
-        window.calc = window.calc || {};
-
-
         // TODO: Your tests go here!
         var expect = chai.expect;
 
@@ -29,7 +26,7 @@
 
 
         describe('Factorial Function Test', function() {
-            it('Should multiply all numbers up to a chosen factorial', function() {
+            it('Should multiply all numbers up to a chosen factorial.c', function() {
                 var testResult = window.calc.factorial(5);
                 expect(testResult).to.equal(120);
             });
